@@ -43,4 +43,7 @@ Thumbs.db
 
 
 # Compiled
-www
+/www
+/platforms
+/plugins
+/hooks
