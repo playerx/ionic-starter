@@ -1,16 +1,17 @@
-import { Component } from '@angular/core';
-import { HomePage } from 'pages';
-import { Platform, AlertController } from 'ionic-angular'
+import { Component, OnInit } from '@angular/core';
+import { HomePageComponent } from 'pages';
+import { Platform, AlertController } from 'ionic-angular';
+import { environment } from 'environments/environment';
 
 @Component({
 	selector: 'app-root',
 	templateUrl: 'app.component.ts.html',
 	styleUrls: ['app.component.ts.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 	title = 'app works!';
 
-	rootPage = HomePage
+	rootPage = HomePageComponent;
 
 
 	constructor(private platform: Platform, private alert: AlertController) {
@@ -18,18 +19,6 @@ export class AppComponent {
 	}
 
 	async ngOnInit() {
-
-		this.alert.create({
-			title: 'Platform is not ready yet',
-			buttons: ['Okey']
-		}).present();
-
 		await this.platform.ready();
-
-
-		this.alert.create({
-			title: 'Platform is Ready!',
-			buttons: ['Cool']
-		}).present();
 	}
 }

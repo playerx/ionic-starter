@@ -4,22 +4,22 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { IonicApp, IonicModule } from 'ionic-angular';
 
-import { HomePage } from 'pages';
+import { HomePageComponent } from 'pages';
 import { AppComponent } from './app.component';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomePage
-  ],
-  imports: [
-    IonicModule.forRoot(AppComponent),
-    FormsModule,
-    HttpModule
-  ],
-  providers: [],
-  entryComponents: [HomePage],
-  bootstrap: [IonicApp]
+	declarations: [
+		AppComponent,
+		HomePageComponent
+	],
+	imports: [
+		IonicModule.forRoot(AppComponent),
+		FormsModule,
+		HttpModule
+	],
+	providers: [],
+	entryComponents: [HomePageComponent],
+	bootstrap: [IonicApp]
 })
 export class AppModule { }
