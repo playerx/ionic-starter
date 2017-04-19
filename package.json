@@ -5,9 +5,9 @@
 	"scripts": {
 		"ng": "ng",
 		"start": "ng serve --host 0.0.0.0",
-		"build": "ng build --output-path=www",
+		"build": "ng build --prod --output-path=www && cordova build",
 		"lint": "ng lint",
-		"emulate": "npm run build && cordova emulate ios"
+		"emulate": "ng build --output-path=www && cordova emulate ios"
 	},
 	"private": true,
 	"dependencies": {

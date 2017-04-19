@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { HomePageComponent } from 'pages';
 import { Platform, AlertController } from 'ionic-angular';
 import { environment } from 'environments/environment';
+import { HomePageComponent } from '@pages';
 
 @Component({
 	selector: 'app-root',

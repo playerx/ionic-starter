@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { IonicApp, IonicModule } from 'ionic-angular';
 
-import { HomePageComponent } from 'pages';
+import { HomePageComponent } from '@pages';
 import { AppComponent } from './app.component';
 
 
